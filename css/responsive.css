@@ -1,0 +1,85 @@
+/* ==========================================================================
+   RESPONSIVE DESIGN
+   ========================================================================== */
+
+/* Tablet & Smaller Laptops */
+@media screen and (max-width: 992px) {
+    .about-grid, .skills-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .hero-text .name {
+        font-size: 3rem;
+    }
+    
+    .hero-text .title {
+        font-size: 1.5rem;
+    }
+}
+
+/* Mobile Devices */
+@media screen and (max-width: 768px) {
+    .nav-links {
+        position: fixed;
+        right: -100%;
+        top: 80px;
+        flex-direction: column;
+        background: var(--glass-bg);
+        backdrop-filter: blur(15px);
+        -webkit-backdrop-filter: blur(15px);
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow: 0 10px 10px rgba(0,0,0,0.1);
+        padding: 20px 0;
+        border-bottom: 1px solid var(--glass-border);
+    }
+    
+    .nav-links.nav-active {
+        right: 0;
+    }
+    
+    .nav-links li {
+        margin: 15px 0;
+    }
+    
+    .hamburger {
+        display: block;
+    }
+    
+    .hamburger.toggle .line:nth-child(1) {
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
+    
+    .hamburger.toggle .line:nth-child(2) {
+        opacity: 0;
+    }
+    
+    .hamburger.toggle .line:nth-child(3) {
+        transform: rotate(45deg) translate(-5px, -6px);
+    }
+    
+    .hero-text .name {
+        font-size: 2.5rem;
+    }
+    
+    .hero-buttons {
+        flex-direction: column;
+    }
+    
+    .section-title {
+        font-size: 2rem;
+    }
+    
+    .timeline::after {
+        left: 15px;
+    }
+    
+    .timeline-dot {
+        left: 8px;
+    }
+    
+    .timeline-item {
+        padding-left: 45px;
+    }
+}
