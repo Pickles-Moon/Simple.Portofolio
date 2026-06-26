@@ -1,0 +1,38 @@
+/* ==========================================================================
+   ANIMATIONS & KEYFRAMES
+   ========================================================================== */
+
+/* Cursor Blink Effect */
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+}
+
+/* Intersection Observer Initial States */
+.animate {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out, visibility 0.8s ease-out;
+}
+
+/* Fade In Animation */
+.fade-in {
+    transform: scale(0.95);
+}
+
+.fade-in.active {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1);
+}
+
+/* Slide Up Animation */
+.slide-up {
+    transform: translateY(40px);
+}
+
+.slide-up.active {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
