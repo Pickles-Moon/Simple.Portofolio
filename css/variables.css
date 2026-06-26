@@ -1,0 +1,32 @@
+/* ==========================================================================
+   CSS VARIABLES - EDIT THEME COLORS HERE
+   ========================================================================== */
+:root {
+    /* Primary Colors (Dark Mode Only) */
+    --bg-color: #0B0F19;              /* Deep background color */
+    --secondary-bg: #111827;          /* Lighter background for cards/sections */
+    
+    /* Accents */
+    --primary-accent: #38BDF8;        /* Light blue accent */
+    --secondary-accent: #7C3AED;      /* Purple accent */
+    
+    /* Text Colors */
+    --text-primary: #FFFFFF;          /* Main text */
+    --text-secondary: #BFC7D5;        /* Subtitles and descriptions */
+    
+    /* Glassmorphism Specs */
+    --glass-bg: rgba(17, 24, 39, 0.6);
+    --glass-border: rgba(255, 255, 255, 0.08);
+    --glass-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    
+    /* Typography */
+    --font-primary: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    
+    /* Layout & Spacing */
+    --container-width: 1100px;
+    --section-padding: 100px 0;
+    
+    /* Transitions */
+    --transition-fast: 0.2s ease;
+    --transition-smooth: 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
